@@ -1,7 +1,4 @@
-class Player(val name: String) {
-    var lives = 3
-    var level = 1
-    var score = 0
+class Player(val name: String, var level: Int = 1, var lives: Int = 3, var score: Int = 0) {
 
     fun show() {
         println("""

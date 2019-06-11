@@ -7,7 +7,8 @@ class Player(val name: String, var level: Int = 1, var lives: Int = 3, var score
             level: $level
             lives: $lives
             score: $score
-            weapon: ${weapon.name} , ${weapon.damageInflicted}
+            weapon: ${weapon.name}
+            Damage:${weapon.damageInflicted}
             """)
     }
 }

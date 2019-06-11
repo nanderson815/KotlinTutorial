@@ -5,10 +5,10 @@ fun main(args: Array<String>) {
     val louise = Player("Louise", 5)
     louise.show()
 
-    val henry = Player("Henry", 4,8)
+    val henry = Player("Henry", 4, 8)
     henry.show()
 
-    val ryan = Player("Ryan", 2,5,1000)
+    val ryan = Player("Ryan", 2, 5, 1000)
     ryan.show()
 
     val axe = Weapon("Axe", 12)
@@ -18,8 +18,14 @@ fun main(args: Array<String>) {
     axe.damageInflicted = 24
     println(axe.damageInflicted)
 
-    println(ryan.weapon.damageInflicted)
+    ryan.show()
 
-    tim.weapon = Weapon("Sword", 10)
-    println(tim.weapon.name)
+    val sword = Weapon("Sword", 10)
+
+    tim.weapon = sword
+
+    val spear = Weapon("Spear", 14)
+    tim.weapon = spear
+    tim.show()
+
 }

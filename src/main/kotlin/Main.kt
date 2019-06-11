@@ -31,9 +31,27 @@ fun main(args: Array<String>) {
     ryan.show()
 
     val redPotion = Loot("Red Potion", LootType.POTION,7.50)
-    tim.inventory.add(redPotion)
+    tim.getLoot(redPotion)
+    val chestArmor = Loot("Chest Armor", LootType.ARMOR, 80.00)
+    tim.getLoot(chestArmor)
     tim.showInventory()
 
-    println(tim)
+    tim.getLoot(Loot("Ring of Protection", LootType.RING, 40.25))
+    tim.getLoot(Loot("Invisibility Potion", LootType.POTION, 35.95))
+    tim.showInventory()
+
+    if(tim.dropLoot(redPotion)){
+        tim.showInventory()
+    } else {
+        println("You don't have a ${redPotion.name}")
+    }
+
+    val bluePotion = Loot("Blue Potion", LootType.POTION, 6.00)
+
+    if (tim.dropLoot((bluePotion))){
+        tim.showInventory()
+    } else {
+        println("You don't have ${bluePotion.name}")
+    }
 
 }

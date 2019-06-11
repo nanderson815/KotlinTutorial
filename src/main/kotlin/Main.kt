@@ -10,4 +10,4 @@ fun main(args: Array<String>) {
 
     val ryan = Player("Ryan", 2,5,1000)
     ryan.show()
-}
+} 

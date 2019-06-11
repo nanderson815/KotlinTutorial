@@ -30,4 +30,10 @@ fun main(args: Array<String>) {
     tim.show()
     ryan.show()
 
+    val redPotion = Loot("Red Potion", LootType.POTION,7.50)
+    tim.inventory.add(redPotion)
+    tim.showInventory()
+
+    println(tim)
+
 }

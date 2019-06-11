@@ -23,9 +23,11 @@ fun main(args: Array<String>) {
     val sword = Weapon("Sword", 10)
 
     tim.weapon = sword
+    ryan.weapon = tim.weapon
 
     val spear = Weapon("Spear", 14)
     tim.weapon = spear
     tim.show()
+    ryan.show()
 
 }
